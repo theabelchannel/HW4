@@ -43,8 +43,9 @@ public class AdministradorTest {
     
     @Test
     void A5_Login() {
-        // Verificar autenticación del administrador
+        // Verificar la auntenticidad del administrador
         boolean resultado = administrador.login("admin@test.com", "123");
         assertTrue(resultado);
     }
 }
+
