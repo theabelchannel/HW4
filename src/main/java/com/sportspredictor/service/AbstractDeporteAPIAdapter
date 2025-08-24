@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.sportspredictor.service;
+
+import com.sportspredictor.model.EventoDeportivo;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public abstract class AbstractDeporteAPIAdapter implements IDeporteAPI {
+
+  @Override
+  public final List<EventoDeportivo> obtenerEventos() {
+    // Pasos comunes (puedes loggear, cachear, etc.)
+    List<String> crudos = fetchRawEvents();
+    return mapToEventos(crudos);
+  }
+
+  protected abstract List<String> fetchRawEvents();
+
+  protected List<EventoDeportivo> mapToEventos(List<String> crudos) {
+    List<EventoDeportivo> out = new ArrayList<>();
+    int i = 1;
+    for (String nombre : crudos) {
+      out.add(new EventoDeportivo("EVT-" + i++, nombre, new Date()));
+    }
+    return out;
+  }
+}
+
