@@ -1,0 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.sportspredictor.service;
+
+import java.util.Date;
+
+public class EventoParams {
+  public final String id;
+  public final String nombre;
+  public final Date fecha;
+
+  public EventoParams(String id, String nombre, Date fecha) {
+    this.id = id; this.nombre = nombre; this.fecha = new Date(fecha.getTime());
+  }
+}
+
