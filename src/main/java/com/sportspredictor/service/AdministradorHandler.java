@@ -16,4 +16,9 @@ public class AdministradorHandler extends AbstractIncidenciaHandler {
         incidencia.setEstado("RESUELTA");
         System.out.println("Incidencia resuelta por administrador");
     }
+
+    @Override
+    public void procesar(Incidencia incidencia) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
