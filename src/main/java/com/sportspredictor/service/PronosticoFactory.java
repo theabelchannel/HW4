@@ -6,7 +6,6 @@ import com.sportspredictor.model.EventoDeportivo;
 import java.util.UUID;
 
 public class PronosticoFactory implements IPronosticoFactory {
-    
     @Override
     public Pronostico crearPronosticoResultado(Usuario usuario, EventoDeportivo evento, String resultado) {
         String id = UUID.randomUUID().toString();
@@ -14,7 +13,6 @@ public class PronosticoFactory implements IPronosticoFactory {
         pronostico.setTipo("RESULTADO");
         return pronostico;
     }
-    
     @Override
     public Pronostico crearPronosticoMarcador(Usuario usuario, EventoDeportivo evento, String marcador) {
         String id = UUID.randomUUID().toString();
