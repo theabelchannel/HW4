@@ -2,6 +2,7 @@ package com.sportspredictor.service;
 
 import com.sportspredictor.model.Incidencia;
 
+
 public abstract class AbstractIncidenciaHandler implements IIncidenciaHandler {
     
     protected IIncidenciaHandler siguiente;
@@ -24,3 +25,4 @@ public abstract class AbstractIncidenciaHandler implements IIncidenciaHandler {
     
     protected abstract void procesarIncidencia(Incidencia incidencia);
 }
+
