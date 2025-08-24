@@ -6,7 +6,6 @@ public class MiembroQCHandler extends AbstractIncidenciaHandler {
     
     @Override
     public boolean puedeProcesar(Incidencia incidencia) {
-        // Los miembros de QC pueden procesar incidencias complejas
         return incidencia.isCompleja();
     }
     
