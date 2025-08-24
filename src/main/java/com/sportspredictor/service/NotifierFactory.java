@@ -3,8 +3,6 @@ package com.sportspredictor.service;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
-
-
 public class NotifierFactory implements INotifierFactory {
 
   private final Map<String, Supplier<INotifier>> registry = new HashMap<>();
@@ -22,7 +20,6 @@ public class NotifierFactory implements INotifierFactory {
         EmailNotifier::new
     ).get();
   }
-
   @Override
   public INotifier crearEmailNotifier() {
     return create("email");
