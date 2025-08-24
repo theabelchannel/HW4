@@ -6,7 +6,6 @@ public class MiembroSoporteHandler extends AbstractIncidenciaHandler {
     
     @Override
     public boolean puedeProcesar(Incidencia incidencia) {
-        // Los miembros de soporte pueden procesar incidencias simples
         return !incidencia.isCompleja();
     }
     
