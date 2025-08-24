@@ -133,3 +133,4 @@ src/main/java/com/sportspredictor/
 - **Testabilidad**: Cada patrón puede ser probado independientemente
 - **Flexibilidad**: Cambios en APIs externas no afectan el código principal
 - **Claridad**: Lógica de negocio bien separada y fácil de entender
+
