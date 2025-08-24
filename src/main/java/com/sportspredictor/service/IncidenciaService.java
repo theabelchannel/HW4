@@ -11,7 +11,6 @@ public class IncidenciaService {
     }
     
     private void configurarCadena() {
-        // Configurar la cadena: Soporte -> QC -> Administrador
         MiembroSoporteHandler soporte = new MiembroSoporteHandler();
         MiembroQCHandler qc = new MiembroQCHandler();
         AdministradorHandler admin = new AdministradorHandler();
